@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,60 +9,63 @@
 </head>
 <body>
     <header>
-        <h1>Hijab-e-Aminah</h1>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="brand">Hijab-e-Aminah</div>
+        <nav class="nav-toggle" onclick="toggleMenu()">☰</nav>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#hijabs">Hijabs</a></li>
+            <li><a href="#pins">Pins</a></li>
+            <li><a href="#sleeves">Sleeves</a></li>
+        </ul>
     </header>
 
-    <section id="home">
-        <h2>Welcome to Hijab-e-Aminah</h2>
-        <p>Explore our wide range of elegant hijabs, modest sleeves, and premium hijab accessories.</p>
+    <section class="hero">
+        <h1>House of Scarves</h1>
+        <p>Style Your Daily Life with Elegance and Grace</p>
     </section>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <h3>Hijabs</h3>
-        <ul>
-            <li>Georgette Hijabs</li>
-            <li>Chiffon Hijabs</li>
-            <li>Cotton Hijabs</li>
-            <li>Silk Hijabs</li>
-            <li>Lawn Hijabs</li>
-            <li>Hijabs with Attached Caps</li>
-            <li>Square Hijabs</li>
-            <li>Namaz Chaddar</li>
-        </ul>
-        <h3>Hijab Pins</h3>
-        <ul>
-            <li>Magnet Pins</li>
-            <li>Tube Pins</li>
-            <li>Hijab Tape</li>
-            <li>More stylish options</li>
-        </ul>
-        <h3>Modest Sleeves</h3>
-        <ul>
-            <li>Stretchable Modest Sleeves</li>
-            <li>Classic Plain Sleeves</li>
-        </ul>
+    <section id="hijabs" class="products">
+        <h2>Hijabs That Speak Without Words</h2>
+        <div class="product">
+            <img src="images/hijab1.jpg" alt="Georgette Hijab">
+            <h3>Georgette Hijab</h3>
+            <p>Soft, breathable & perfect for daily wear.</p>
+        </div>
+        <div class="product">
+            <img src="images/hijab2.jpg" alt="Namaz Chaddar">
+            <h3>Namaz Chaddar</h3>
+            <p>Spiritual elegance with full modesty.</p>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Hijab-e-Aminah is a brand created with love and passion to provide elegant and modest wear for women. Every piece is hand-picked and thoughtfully designed for your comfort and style.</p>
+    <section id="pins" class="products">
+        <h2>Hold Your Style Together</h2>
+        <div class="product">
+            <img src="images/pins.jpg" alt="Hijab Pins">
+            <h3>Magnet & Tube Pins</h3>
+            <p>Small details, big charm.</p>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>For orders and inquiries, feel free to reach out via WhatsApp.</p>
-        <a href="https://wa.me/yourwhatsapplink" class="whatsapp-button" target="_blank">Order on WhatsApp</a>
+    <section id="sleeves" class="products">
+        <h2>Modesty, Redefined</h2>
+        <div class="product">
+            <img src="images/sleeves.jpg" alt="Modest Sleeves">
+            <h3>Modest Sleeves</h3>
+            <p>Complete your outfit with style.</p>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 Hijab-e-Aminah. All rights reserved.</p>
+        <p>Orders opening soon. Stay connected!</p>
+        <p>© Hijab-e-Aminah – For the Bold, the Modest, and the Beautiful</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
